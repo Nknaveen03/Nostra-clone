@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra - Collections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">NOSTRA</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html" class="active">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="page-header">
+    <h1>Our Collections</h1>
+    <p>Browse all our products — search and filter to find what you love.</p>
+  </div>
+
+  <div class="search-bar reveal">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search products..."
+      oninput="showProducts()"
+    />
+    <button onclick="showProducts()">Search</button>
+  </div>
+
+  <div class="filter-buttons reveal">
+    <button class="active" onclick="filterProducts('All', this)">All</button>
+    <button onclick="filterProducts('Clothing', this)">Clothing</button>
+    <button onclick="filterProducts('Bags', this)">Bags</button>
+    <button onclick="filterProducts('Accessories', this)">Accessories</button>
+    <button onclick="filterProducts('Footwear', this)">Footwear</button>
+  </div>
+
+  <div class="products-grid" id="productsGrid"></div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <p>© 2025 Nostra. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

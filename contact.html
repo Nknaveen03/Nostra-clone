@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nostra - Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">NOSTRA</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Fill in the form below and we'll reply soon.</p>
+  </div>
+
+  <div class="contact-section">
+
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+
+      <p><strong>Address:</strong><br />
+        3/123,Muthanoor<br />
+        Dharmapuri, Tamil Nadu 635303<br />
+      </p>
+
+      <p><strong>Email:</strong><br />
+        nostrash@gmail.com
+      </p>
+
+      <p><strong>Phone:</strong><br />
+       +91 98765 43210
+      </p>
+
+      <p><strong>Working Hours:</strong><br />
+        Mon–Fri: 9:00 AM – 6:00 PM<br />
+        Saturday: 10:00 AM – 3:00 PM<br />
+        Sunday: Closed
+      </p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+
+      <form id="contactForm" onsubmit="submitForm(event)">
+
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <!-- Input glows gold on focus — CSS transition -->
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="subject">Subject *</label>
+        <select id="subject" required>
+          <option value="">-- Select a topic --</option>
+          <option value="order">Order Enquiry</option>
+          <option value="return">Returns & Exchanges</option>
+          <option value="product">Product Question</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message *</label>
+        <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <div class="success-message" id="successMessage">
+        ✅ Thank you! Your message has been sent. We will reply within 24 hours.
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <p>© 2025 Nostra. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
